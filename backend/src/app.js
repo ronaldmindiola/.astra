@@ -9,7 +9,7 @@ app.set("port", process.env.PORT || 4000);
 app.use(cors());
 app.use(express.json());
 
-//routes
-app.use('/api/lists', require('./routes/lists.routes.js'))
+//Routes
+app.use('/api/lists', require('./routes/lists.routes.js'));
 
 module.exports = app;
